@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лига Банк</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="text" style="display: flex; justify-content:space-between ;">
+        <div class="nav text" style="width: 80%;">
+        <img src="image/svg/logo.svg" align="left" style="margin-top: -25px; margin-right:30px;">
+        <a href="#">Услуги</a>
+        <a href="#">Расчитать кредит</a>
+        <a href="#">Контакты</a>
+        <a href="#">Задать вопрос</a>
+        </div>
+        <div class="nav" align="right" style="width: 20%;">
+            <a href="#"> Войти в Интернет-банк</a>
+        </div>
+    </header>
+    <section name="Slider" style="max-width: 100%; margin-left: 0px;margin-right: 0px;"><a name="Slider"></a>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/slider-bg-girl@1x.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text b" align="left">Лига Банк</h1>
+                    <p class="text" align="left">Всегда рядом</p>
+                    <button class="btn btn-primary">Найти отделение</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="image/slider-bg-main@1x.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text b" align="left">Лига Банк</h1>
+                    <p class="text" align="left">Всегда рядом</p>
+                    <button class="btn btn-primary">Найти отделение</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="image/slider-bg-man@1x.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text b" align="left">Лига Банк</h1>
+                    <p class="text" align="left">Всегда рядом</p>
+                    <button class="btn btn-primary">Найти отделение</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section class="section text" name="tabl">
+        <div name="button" style="display: flex; justify-content:space-between ;">
+            <button class="btn tblbut" id="tblbut1" onclick="func1()"><img src="image/svg/icon-blue-vault.svg">Вклады</button>
+            <button class="btn tblbut" id="tblbut2" onclick="func2()" style="background-color: white;"><img src="image/svg/icon-blue-cards.svg">Кредиты</button>
+            <button class="btn tblbut" id="tblbut3" onclick="func3()" style="background-color: white;"><img src="image/svg/icon-blue-security.svg">Страхование</button>
+            <button class="btn tblbut" id="tblbut4" onclick="func4()" style="background-color: white;"><img src="image/svg/icon-blue-phone.svg">Онлайн-сервис</button>
+        </div>
+        <div class="tblcont" id="tbl1">
+            <img src="image/content/tab-piggybank-desctop@1x.jpg" align="right">
+            <h4 class="b">Вклады Лига Банка - это выгодная<br>инвестиция в своё будущее</h4><br>
+            <p>
+                <img src="image/svg/tick.svg"> Проценты по вкладам до 7%<br><br>
+                <img src="image/svg/tick.svg"> Разнообразные условия<br><br>
+                <img src="image/svg/tick.svg"> Возможность ежемесячной капитализации<br>
+                или вывод процентов на банковскую карту
+            </p>
+            <a class="btn btn-primary" href="#">Узнать подробнее</a>
+        </div>
+        <div class="tblcont" id="tbl2" style="display: none;">
+            <img src="image/content/tab-car-desctop@1x.jpg" align="right">
+            <h4 class="b">Лига банк выдаёт кредиты под<br>любые цели</h4><br>
+            <p>
+                <img src="image/svg/tick.svg"> Ипотечный кредит<br><br>
+                <img src="image/svg/tick.svg"> Автокредит<br><br>
+                <img src="image/svg/tick.svg"> Потребительский кредит<br><br>
+                Расчитайте ежемесячный платёж и ставку по<br>
+                кредиту воспользовавшись нашим кредитным<br>
+                калькулятором
+            </p>
+        </div>
+        <div class="tblcont" id="tbl3" style="display: none;">
+            <img src="image/content/tab-padlock-desctop@1x.jpg" align="right">
+            <h4 class="b">Лига Страхование - застрахуем всё<br>что захотите</h4><br>
+            <p>
+                <img src="image/svg/tick.svg"> Автомобильное страхование<br><br>
+                <img src="image/svg/tick.svg"> Страхование жизни и здоровья<br><br>
+                <img src="image/svg/tick.svg"> Страхование недвижимости
+            </p>
+            <a class="btn btn-primary" href="#">Узнать подробнее</a>
+        </div>
+        <div class="tblcont" id="tbl4" style="display: none;">
+            <img src="image/content/tab-phone-desctop@1x.jpg" align="right">
+            <h4 class="b">Лига Банк - это огромное<br>количество онлайн-сервисов<br>для вашего удобства</h4><br>
+            <p>
+                <img src="image/svg/tick.svg"> Мобильный банк, который всегда под рукой<br><br>
+                <img src="image/svg/tick.svg"> Приложение Лига-проездной позволит вам<br>оплачивать билеты по всему миру
+            </p>
+            <a class="btn btn-primary" href="#">Узнать подробнее</a>
+        </div>
+    </section>
+    <section class="section" name="Calc">
+        <h1 class="b">Кредитный калькулятор</h1>
+        <div style="display: flex; justify-content:space-between ;">
+            <div name="form">
+                <h3>Шаг 1. Цель кредита</h3>
+                <select id="bet">
+                    <option value="9.6">Ипотечное кредитование</option>
+                    <option value="3.5">Автокредитование</option>
+                    <option value="14.5">Потребительский кредит</option>
+                </select><br>
+                <h3>Шаг 2. Введите параметры кредита</h3>
+                Стоимость недвижимости<br>
+                <button onclick="minus()" style="border: 0px;">-</button><input type="text" value="2000000" disabled id="cost"><button onclick="plus()" style="border: 0px;">+</button><br>
+                От 1 200 000 до 25 000 000 рублей<br>
+                Первоначальный взнос<br>
+                <input type="text" disabled id="contribution"> рублей<br>
+                <input type="range" min="10" max="100" step="1" value="10" onclick="fcontrng()" id="contrng"><br>
+                <div style="display: flex; justify-content:space-between ;">
+                    <div>10%</div>
+                    <div>100%</div>
+                </div>
+                Срок кредитования<br>
+                <input type="text" id="ages" disabled> лет<br>
+                <input type="range" min="5" max="30" step="1" value="5" onclick="agerng()" id="agesrng"><br>
+                <div style="display: flex; justify-content:space-between ;">
+                    <div>5 лет</div>
+                    <div>30 лет</div>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Momcap">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Использовать материнский капитал
+                    </label>
+                </div>
+            </div>
+            <div class="proposal">
+                <h3>Наше предложение</h3>
+                <div style="display: flex; justify-content:space-between ;">
+                    <div>
+                        <h4 id="sum" class="b"></h4>
+                        <p id="namecred">Сумма ипотеки</p><br>
+                        <h4 id="monthpay" class="b"></h4>
+                        <p>Ежемесячный платёж</p>
+                    </div>
+                    <div>
+                        <h4 id="proc" class="b"></h4>
+                        <p>Процентная ставка</p><br>
+                        <h4 id="zp" class="b"></h4>
+                        <p>Необходимый доход</p>
+                    </div>
+                </div><br>
+                <a href="#" class="btn btn-primary" style="width: 100%;">Оформить заявку</a>
+            </div>
+        </div>
+    </section>
+    <section class="section" name="Department">
+        <h1 class="b">Отделения Лига Банка</h1>
+        <div class="checkmap">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Россия
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    СНГ
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Европа
+                </label>
+            </div>
+        </div>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A433e5008cb9b535aa1b40eb80edb089cae819300c02fb8031060d736ac137a6d&amp;width=100%25&amp;height=451&amp;lang=ru_RU&amp;scroll=true"></script>
+    </section>
+    <footer>
+        <div style="display: flex; justify-content:space-between ;">
+            <div class="footsect">
+                <img src="image/svg/logo.svg">
+                <p>150015, г. Москва, ул. Московская, д. 32<br>
+                    Генеральная лицензия Банка России №1050<br>
+                    Лига Банк, 2019
+                </p>
+            </div>
+            <div class="footsect b">
+                <a href="#">Услуги</a><br>
+                <a href="#">Расчитать кредит</a><br>
+                <a href="#">Контакты</a><br>
+                <a href="#">Задать вопрос</a>
+            </div>
+            <div class="footsect">
+                <img src="image/svg/mobile.svg">
+                *0904<br>
+                Бесплатно для абонентов<br>
+                МТС, Билайн, Мегафон, Теле2
+            </div>
+            <div class="footsect">
+                <img src="image/svg/phone.svg">
+                <span class="b">8 800 111 22 23</span><br>
+                Бесплатно для всех<br>
+                Городов России
+            </div>
+            <div class="footsect">
+                <img src="image/svg/icon-facebook.svg">
+                <img src="image/svg/icon-instagram.svg">
+                <img src="image/svg/icon-twitter.svg">
+                <img src="image/svg/icon-youtube.svg">
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script></body>
+</html>
